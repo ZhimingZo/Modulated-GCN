@@ -43,7 +43,7 @@ pip install -r requirements.txt
 CPN 2D detections for Human3.6M datasets are provided by [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) Pavllo et al. [2], which can be downloaded by the following steps:
 
 ```
-cd data
+cd dataset
 wget https://dl.fbaipublicfiles.com/video-pose-3d/data_2d_h36m_cpn_ft_h36m_dbb.npz
 wget https://dl.fbaipublicfiles.com/video-pose-3d/data_2d_h36m_detectron_ft_h36m.npz
 cd ..
@@ -57,7 +57,7 @@ gdown https://drive.google.com/uc?id=1Ac-gUXAg-6UiwThJVaw6yw2151Bot3L1
 python prepare_data_h36m.py --from-archive h36m.zip
 cd ..
 ```
-After this step, you should end up with two files in the data directory: data_3d_h36m.npz for the 3D poses, and data_2d_h36m_gt.npz for the ground-truth 2D poses.
+After this step, you should end up with two files in the dataset directory: data_3d_h36m.npz for the 3D poses, and data_2d_h36m_gt.npz for the ground-truth 2D poses.
 
 ### Evaluating our pre-trained models
 The pre-trained models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1HoNd2YPc8BdGvrN46GR_N2OchahzLx4I?usp=sharing). Put `ckpt` in the project root directory.
