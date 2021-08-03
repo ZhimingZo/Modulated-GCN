@@ -77,8 +77,7 @@ python main_graph.py  --pro_train 1 --save_model 1  --save_dir './ckpt'
 ```
 By default the application runs in testing mode.
 If you want to try different network settings, please refer to [`opt1.py`](opt1.py) for more details. Note that the 
-default setting of hyper-parameters is used for training model with CPN detectors as input, please refer to the paper for implementation details.  
-```
+default setting of hyper-parameters is used for training model with CPN detectors as input, please refer to the paper for implementation details.
 
 
 ### References
