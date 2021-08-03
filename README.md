@@ -98,4 +98,4 @@ This code is extended from the following repositories.
 - [Semantic GCN](https://github.com/garyzhao/SemGCN)
 - [Local-to-Global GCN](https://github.com/vanoracai/Exploiting-Spatial-temporal-Relationships-for-3D-Pose-Estimation-via-Graph-Convolutional-Networks)
 
-We thank the authors for releasing their codes. Please also consider citing their works.
+We thank the authors for releasing their help. Please also consider citing their works.
