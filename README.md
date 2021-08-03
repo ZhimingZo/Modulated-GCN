@@ -91,7 +91,7 @@ default setting of hyper-parameters is used for training model with CPN detector
 
 [3] Cai et al. [Exploiting Spatial-temporal Relationships for 3D Pose Estimation via Graph Convolutional Networks](https://openaccess.thecvf.com/content_ICCV_2019/papers/Cai_Exploiting_Spatial-Temporal_Relationships_for_3D_Pose_Estimation_via_Graph_Convolutional_ICCV_2019_paper.pdf). ICCV 2019.
 
-## Acknowledgement
+### Acknowledgement
 This code is extended from the following repositories.
 - [3d-pose-baseline](https://github.com/una-dinosauria/3d-pose-baseline)
 - [3d_pose_baseline_pytorch](https://github.com/weigq/3d_pose_baseline_pytorch)
