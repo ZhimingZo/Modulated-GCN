@@ -1,7 +1,0 @@
-train 
-python main_graph.py --pad 0 --pro_train 1 --save_model 1  --save_dir './ckpt'
-
-
-test
-python main_graph.py --pad 0  --post_refine --module_gcn_reload 1  --previous_dir './ckpt/best_model_bm' --save_dir './ckpt_best_model_bm' --post_refine_reload 1 --nepoch 2 --show_protocol2
-
