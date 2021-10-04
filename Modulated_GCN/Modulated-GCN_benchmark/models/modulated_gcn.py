@@ -101,5 +101,4 @@ class ModulatedGCN(nn.Module):
         out = out.permute(0,2,1)
         out = out.unsqueeze(2)
         out = out.unsqueeze(4)
-        #out = out[:,:,0].unsqueeze(2)
         return out

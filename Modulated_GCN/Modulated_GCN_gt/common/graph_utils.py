@@ -32,16 +32,13 @@ def adj_mx_from_edges(num_pts, edges, sparse=True):
     # build symmetric adjacency matrix
     adj_mx = adj_mx + adj_mx.T.multiply(adj_mx.T > adj_mx) - adj_mx.multiply(adj_mx.T > adj_mx)
     adj_mx = normalize(adj_mx) #+ sp.eye(adj_mx.shape[0]))
-#    print(adj_mx)
-#    exit(0)
     if sparse:
         adj_mx = sparse_mx_to_torch_sparse_tensor(adj_mx)
     else:
         adj_mx = torch.tensor(adj_mx.todense(), dtype=torch.float)
     
     adj_mx = adj_mx * (1-torch.eye(adj_mx.shape[0])) + torch.eye(adj_mx.shape[0])
-    #print(adj_mx)
-    #exit(0)
+
     return adj_mx
 
 

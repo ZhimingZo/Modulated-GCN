@@ -39,8 +39,7 @@ class ModulatedGraphConv(nn.Module):
         h1 = torch.matmul(input, self.W[1])
         
         adj = self.adj.to(input.device) + self.adj2.to(input.device)
-        #print(adj)
-        #exit(0)
+  
         adj = (adj.T + adj)/2
         
         E = torch.eye(adj.size(0), dtype=torch.float).to(input.device)
