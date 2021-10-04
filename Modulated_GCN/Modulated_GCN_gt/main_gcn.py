@@ -43,7 +43,7 @@ def parse_args():
     parser.add_argument('-z', '--hid_dim', default=128, type=int, metavar='N', help='num of hidden dimensions')
     parser.add_argument('-b', '--batch_size', default=64, type=int, metavar='N',
                         help='batch size in terms of predicted frames')
-    parser.add_argument('-e', '--epochs', default=100, type=int, metavar='N', help='number of training epochs')
+    parser.add_argument('-e', '--epochs', default=50, type=int, metavar='N', help='number of training epochs')
     parser.add_argument('--lamda', '--weight_L1_norm', default=0.1, type=float, metavar='N', help='scale of L1 Norm')
     parser.add_argument('--num_workers', default=8, type=int, metavar='N', help='num of workers for data loading')
     parser.add_argument('--lr', default=1.0e-3, type=float, metavar='LR', help='initial learning rate')

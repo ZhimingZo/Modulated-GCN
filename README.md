@@ -21,7 +21,6 @@ Under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint 
 
 | Method | 2D Detections | # of Epochs | # of Parameters | MPJPE (P1) | P-MPJPE (P2) |
 |:-------|:-------:|:-------:|:-------:|:-------:|:-------:|
-| Martinez et al. [1] | Ground truth | 200  | 4.29M | 44.40 mm | 35.25 mm |
 | SemGCN | Ground truth | 50 | 0.27M | 42.14 mm | 33.53 mm |
 | SemGCN (w/ Non-local) | Ground truth | 30 | 0.43M | 40.78 mm | 31.46 mm |
 | Modulated GCN   | Ground truth | 50 |  0.29M  | **38.25 mm** | **30.06 mm** |
@@ -31,7 +30,7 @@ The results are borrowed from [SemGCN](https://github.com/garyzhao/SemGCN).
 
 ## Quickstart
 
-This repository is build upon Python v3.7 and Pytorch v1.3.1 on Ubuntu 18.04. All experiments are conducted on a single NVIDIA RTX 2080 Ti GPU. See [`requirements.txt`](requirements.txt) for other dependencies. We recommend installing Python v3.7 from [Anaconda](https://www.anaconda.com/) and installing Pytorch (>= 1.3.1) following guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version. Then you can install dependencies with the following commands.
+This repository is build upon Python v3.7 and Pytorch v1.7.0 on Ubuntu 18.04. All experiments are conducted on a single NVIDIA RTX 2080 Ti GPU. See [`requirements.txt`](requirements.txt) for other dependencies. We recommend installing Python v3.7 from [Anaconda](https://www.anaconda.com/) and installing Pytorch (>= 1.7.0) following guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version. Then you can install dependencies with the following commands.
 
 ```
 git clone git@github.com:ZhimingZo/Modulated-GCN.git
@@ -78,6 +77,16 @@ python main_graph.py  --pro_train 1 --save_model 1  --save_dir './ckpt'
 By default the application runs in testing mode.
 If you want to try different network settings, please refer to [`opt1.py`](opt1.py) for more details. Note that the 
 default setting of hyper-parameters is used for training model with CPN detectors as input, please refer to the paper for implementation details.
+
+### GT Evaluation 
+```
+python main_gcn.py  --eva checkpoint/ckpt_Modulated_GCN_128_38.25_30.06.pth.tar
+
+```
+### GT Training 
+'''
+python main_gcn.py
+'''
 
 
 ### References
