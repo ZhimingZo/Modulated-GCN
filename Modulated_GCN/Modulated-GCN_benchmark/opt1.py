@@ -61,7 +61,7 @@ class opts():
 
         self.parser.add_argument('--weight_decay', type=float, default=0.0001, help='weight decay for optimizer for SGD')
         self.parser.add_argument('--optimizer', type=str, default='Adam', help='SGD or Adam')
-        self.parser.add_argument('-lrd', '--lr_decay', default=0.65, type=float, metavar='LR',
+        self.parser.add_argument('-lrd', '--lr_decay', default=0.90, type=float, metavar='LR',
                             help='learning rate decay per epoch')#
         self.parser.add_argument('--save_skl', type=bool, default=False)#
 

@@ -14,7 +14,7 @@
   large_decay_epoch: 4
   layout: hm36_gt
   learning_rate: 0.005
-  lr_decay: 0.65
+  lr_decay: 0.9
   model_doc: modulated_gcn
   module_gcn_model: model_module_gcn_7_eva_post_4939.pth
   module_gcn_reload: 0

@@ -38,7 +38,7 @@ cd Modulated-GCN
 pip install -r requirements.txt
 ```
 
-### Dataset setup
+### Benchmark setup
 CPN 2D detections for Human3.6M datasets are provided by [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) Pavllo et al. [2], which can be downloaded by the following steps:
 
 ```
@@ -47,16 +47,6 @@ wget https://dl.fbaipublicfiles.com/video-pose-3d/data_2d_h36m_cpn_ft_h36m_dbb.n
 wget https://dl.fbaipublicfiles.com/video-pose-3d/data_2d_h36m_detectron_ft_h36m.npz
 cd ..
 ```
-
-GT 2D keypoints for Human3.6M datasets are obtained from [SemGCN](https://github.com/garyzhao/SemGCN) Zhao et al. [3], which can be downloaded by the following steps:
-```
-cd data
-pip install gdown
-gdown https://drive.google.com/uc?id=1Ac-gUXAg-6UiwThJVaw6yw2151Bot3L1
-python prepare_data_h36m.py --from-archive h36m.zip
-cd ..
-```
-After this step, you should end up with two files in the dataset directory: data_3d_h36m.npz for the 3D poses, and data_2d_h36m_gt.npz for the ground-truth 2D poses.
 
 ### Evaluating our pre-trained models
 The pre-trained models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1HoNd2YPc8BdGvrN46GR_N2OchahzLx4I?usp=sharing). Put `ckpt` in the project root directory.
@@ -77,6 +67,19 @@ python main_graph.py  --pro_train 1 --save_model 1  --save_dir './ckpt'
 By default the application runs in testing mode.
 If you want to try different network settings, please refer to [`opt1.py`](opt1.py) for more details. Note that the 
 default setting of hyper-parameters is used for training model with CPN detectors as input, please refer to the paper for implementation details.
+
+
+### GT setup 
+
+GT 2D keypoints for Human3.6M datasets are obtained from [SemGCN](https://github.com/garyzhao/SemGCN) Zhao et al. [3], which can be downloaded by the following steps:
+```
+cd data
+pip install gdown
+gdown https://drive.google.com/uc?id=1Ac-gUXAg-6UiwThJVaw6yw2151Bot3L1
+python prepare_data_h36m.py --from-archive h36m.zip
+cd ..
+```
+After this step, you should end up with two files in the dataset directory: data_3d_h36m.npz for the 3D poses, and data_2d_h36m_gt.npz for the ground-truth 2D poses.
 
 ### GT Evaluation 
 ```
