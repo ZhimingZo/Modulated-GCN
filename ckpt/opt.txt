@@ -1,0 +1,53 @@
+==> Args:
+  actions: *
+  batchSize: 256
+  cal_uvd: True
+  co_diff: 0
+  crop_uv: 0
+  data_augmentation: True
+  dataset: h36m
+  downsample: 1
+  dropout: 0.2
+  hid_dim: 384
+  in_channels: 2
+  keypoints: cpn_ft_h36m_dbb
+  large_decay_epoch: 4
+  layout: hm36_gt
+  learning_rate: 0.005
+  lr_decay: 0.65
+  model_doc: modulated_gcn
+  module_gcn_model: model_module_gcn_7_eva_post_4939.pth
+  module_gcn_reload: 0
+  n_joints: 17
+  nepoch: 31
+  norm: 0.01
+  num_layers: 4
+  optimizer: Adam
+  out_all: True
+  out_channels: 3
+  out_joints: 17
+  pad: 0
+  post_refine: False
+  post_refine_model: model_post_refine_7_eva_post_4939.pth
+  post_refine_reload: 0
+  previous_best_threshold: inf
+  previous_dir: ./ckpt/module_256/
+  previous_module_gcn_name: 
+  previous_post_refine_name: 
+  pro_test: 1
+  pro_train: 1
+  reverse_augmentation: False
+  root_path: ./dataset/
+  save_dir: ./ckpt
+  save_model: 0
+  save_out_type: xyz
+  save_skl: False
+  show_protocol2: False
+  strategy: spatial
+  stride: 1
+  subset: 1
+  sym_penalty: 0
+  test_augmentation: True
+  weight_decay: 0.0001
+  workers: 6
+==> Args:
