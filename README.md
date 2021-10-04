@@ -81,12 +81,11 @@ default setting of hyper-parameters is used for training model with CPN detector
 ### GT Evaluation 
 ```
 python main_gcn.py  --eva checkpoint/ckpt_Modulated_GCN_128_38.25_30.06.pth.tar
-
 ```
 ### GT Training 
-'''
+```
 python main_gcn.py
-'''
+```
 
 
 ### References
