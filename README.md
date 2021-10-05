@@ -1,6 +1,6 @@
 # Modulated Graph Convolutional Network for 3D Human Pose Estimation (ICCV 2021)
 
-This repository holds the Pytorch implementation of [Modulated Graph Convolutional Network for 3D Human Pose Estimation]() by Zhiming Zou and Wei Tang. If you find our code useful in your research, please consider citing:
+This repository holds the Pytorch implementation of [Modulated Graph Convolutional Network for 3D Human Pose Estimation](https://openaccess.thecvf.com/content/ICCV2021/papers/Zou_Modulated_Graph_Convolutional_Network_for_3D_Human_Pose_Estimation_ICCV_2021_paper.pdf) by Zhiming Zou and Wei Tang. If you find our code useful in your research, please consider citing:
 
 ```
 @article{zouModulated,
