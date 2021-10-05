@@ -39,12 +39,11 @@ opt = opts().parse() # import args
 from data.load_data_hm36 import Fusion # data fusion to prepare data 
 ################modification#############
 if opt.pad > 0:
-    exit(0) ##not allow temporal info
+    exit(0) ## temporal info is not available
 else:
-    #from nets.st_gcn_single_frame import Model
     from models.modulated_gcn import ModulatedGCN
 lr = opt.learning_rate
-opt.manualSeed = 1 #random.randint(1, 10000) # fix seed
+opt.manualSeed = random.randint(1, 10000) # fix seed
 print("Random Seed: ", opt.manualSeed)
 random.seed(opt.manualSeed)
 torch.manual_seed(opt.manualSeed)
