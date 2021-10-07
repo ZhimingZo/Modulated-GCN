@@ -47,7 +47,12 @@ wget https://dl.fbaipublicfiles.com/video-pose-3d/data_2d_h36m_cpn_ft_h36m_dbb.n
 wget https://dl.fbaipublicfiles.com/video-pose-3d/data_2d_h36m_detectron_ft_h36m.npz
 cd ..
 ```
-
+3D labels and ground truth can be downloaded
+```
+cd dataset
+gdown --id 1P7W3ldx2lxaYJJYcf3RG4Y9PsD4EJ6b0
+cd ..
+```
 ### Evaluating our pre-trained models
 The pre-trained models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1HoNd2YPc8BdGvrN46GR_N2OchahzLx4I?usp=sharing). Put `ckpt` in the project root directory.
 
