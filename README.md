@@ -33,7 +33,7 @@ The results are borrowed from [SemGCN](https://github.com/garyzhao/SemGCN).
 This repository is build upon Python v3.7 and Pytorch v1.7.0 on Ubuntu 18.04. All experiments are conducted on a single NVIDIA RTX 2080 Ti GPU. See [`requirements.txt`](requirements.txt) for other dependencies. We recommend installing Python v3.7 from [Anaconda](https://www.anaconda.com/) and installing Pytorch (>= 1.7.0) following guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version. Then you can install dependencies with the following commands.
 
 ```
-git clone git@github.com:ZhimingZo/Modulated-GCN.git
+git clone https://github.com/ZhimingZo/Modulated-GCN.git
 cd Modulated-GCN
 pip install -r requirements.txt
 ```
