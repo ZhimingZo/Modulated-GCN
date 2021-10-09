@@ -116,7 +116,7 @@ class opts():
 
         if self.opt.keypoints == 'cpn_ft_h36m_dbb':
             #self.opt.save_dir += 'cpn/'
-            self.opt.layout = 'hm36_cpn'
+            self.opt.layout = 'hm36_gt'
 
         elif self.opt.keypoints == 'gt':
             #self.opt.save_dir += 'gt/'
