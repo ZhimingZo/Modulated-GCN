@@ -3,9 +3,13 @@
 This repository holds the Pytorch implementation of [Modulated Graph Convolutional Network for 3D Human Pose Estimation](https://openaccess.thecvf.com/content/ICCV2021/papers/Zou_Modulated_Graph_Convolutional_Network_for_3D_Human_Pose_Estimation_ICCV_2021_paper.pdf) by Zhiming Zou and Wei Tang. If you find our code useful in your research, please consider citing:
 
 ```
-@article{zouModulated,
-  title={Modulated Graph Convolutional Network for 3D Human Pose Estimation},
-  author={Zou, Zhiming and Tang, Wei}
+@InProceedings{Zou_2021_ICCV,
+    author    = {Zou, Zhiming and Tang, Wei},
+    title     = {Modulated Graph Convolutional Network for 3D Human Pose Estimation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {11477-11487}
 }
 ```
 
